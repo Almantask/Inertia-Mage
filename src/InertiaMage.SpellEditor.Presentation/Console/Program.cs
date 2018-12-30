@@ -20,8 +20,14 @@ namespace InertiaMage.SpellEditor.Presentation.Console
             // Conditions: true or false
             bool isFirstLesson = true;
 
+            
+
             string greeting1 = Greeter.Greet(person);
             Greeter.Print(person);
+            System.Console.ReadLine();
+
+            string prntspellatt = SpellAttributes.Magesfire();
+            SpellAttributes.Print(prntspellatt);
             System.Console.ReadLine();
         }
     }
