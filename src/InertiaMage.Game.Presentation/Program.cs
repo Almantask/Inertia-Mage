@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InertiaMage.Game.Presentation
 {
@@ -10,6 +6,25 @@ namespace InertiaMage.Game.Presentation
     {
         static void Main(string[] args)
         {
+            const int applesInKentucky = 5;
+            const int applesInOregon = 6;
+            var totalApples = SumAndPrint(applesInKentucky, applesInOregon);
+
+            const int bannanasInKentucky = 1;
+            const int bannanasInOregon = 2;
+            var sum2 = SumAndPrint(bannanasInKentucky, bannanasInOregon);
+        }
+
+        static int SumAndPrint(int a, int b)
+        {
+            var sum = a + b;
+            Print(a, b, sum);
+            return sum;
+        }
+ 
+        static void Print(int a, int b, int sum)
+        {
+            Console.WriteLine($"{a} + {b} = {sum}");
         }
     }
 }

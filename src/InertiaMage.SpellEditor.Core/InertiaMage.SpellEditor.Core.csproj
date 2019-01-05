@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayTest.cs" />
     <Compile Include="Greeter.cs" />
+    <Compile Include="Logic.cs" />
+    <Compile Include="LogicalOperationsTest.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

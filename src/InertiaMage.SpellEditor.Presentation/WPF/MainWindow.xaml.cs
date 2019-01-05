@@ -11,8 +11,7 @@ namespace InertiaMage.SpellEditor.Presentation.WPF
         public MainWindow()
         {
             InitializeComponent();
-            string person = "Tom";
-            string greeting1 = Greeter.Greet(person);
+            // run your command
         }
     }
 }

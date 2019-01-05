@@ -10,6 +10,7 @@ namespace InertiaMage.SpellEditor.Presentation.WPF
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            // call your command
         }
     }
 }
