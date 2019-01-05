@@ -63,4 +63,5 @@ namespace InertiaMage.SpellEditor.Core
             return $"Hello, {person}! :)";
         }
     }
+
 }
