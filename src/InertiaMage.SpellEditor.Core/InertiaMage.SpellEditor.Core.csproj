@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayTest.cs" />
+    <Compile Include="Child.cs" />
+    <Compile Include="Father.cs" />
     <Compile Include="Greeter.cs" />
+    <Compile Include="INamable.cs" />
     <Compile Include="Logic.cs" />
     <Compile Include="LogicalOperationsTest.cs" />
     <Compile Include="Person.cs" />

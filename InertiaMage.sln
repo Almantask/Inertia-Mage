@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaMage.SpellEditor.Presentation.Console", "src\InertiaMage.SpellEditor.Presentation\Console\InertiaMage.SpellEditor.Presentation.Console.csproj", "{C916F412-9256-4F75-AAF2-5BD043C3D0BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaMage.SpellEditor.Presentation.Consol", "src\InertiaMage.SpellEditor.Presentation\Console\InertiaMage.SpellEditor.Presentation.Consol.csproj", "{C916F412-9256-4F75-AAF2-5BD043C3D0BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaMage.SpellEditor.Presentation.WPF", "src\InertiaMage.SpellEditor.Presentation\WPF\InertiaMage.SpellEditor.Presentation.WPF.csproj", "{894B109C-9286-4977-B60A-6243E69FF279}"
 EndProject
@@ -14,6 +14,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaMage.Game.Presentation", "src\InertiaMage.Game.Presentation\InertiaMage.Game.Presentation.csproj", "{BFE1296E-03E1-467D-A9F0-ADDE0D570ABB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaMage.Game.Core", "src\InertiaMage.Game.Core\InertiaMage.Game.Core.csproj", "{F413B9EC-06DB-4494-9A8D-F8861121BBDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tets", "Tets", "{DD5CE340-5AA5-45C5-865E-B6C9D76A045C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{085C1F40-A151-4EE5-BC3C-300492592A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntertiaMage.Game.Core.Bad", "IntertiaMage.Game.Core.Bad\IntertiaMage.Game.Core.Bad.csproj", "{EA2CEEE8-4657-4DD9-896B-C83AF86A2BBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +51,20 @@ Global
 		{F413B9EC-06DB-4494-9A8D-F8861121BBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F413B9EC-06DB-4494-9A8D-F8861121BBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F413B9EC-06DB-4494-9A8D-F8861121BBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085C1F40-A151-4EE5-BC3C-300492592A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085C1F40-A151-4EE5-BC3C-300492592A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085C1F40-A151-4EE5-BC3C-300492592A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085C1F40-A151-4EE5-BC3C-300492592A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2CEEE8-4657-4DD9-896B-C83AF86A2BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2CEEE8-4657-4DD9-896B-C83AF86A2BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2CEEE8-4657-4DD9-896B-C83AF86A2BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2CEEE8-4657-4DD9-896B-C83AF86A2BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{085C1F40-A151-4EE5-BC3C-300492592A26} = {DD5CE340-5AA5-45C5-865E-B6C9D76A045C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C23DC7E8-B6F0-4C9A-902A-FE89A97CBA08}

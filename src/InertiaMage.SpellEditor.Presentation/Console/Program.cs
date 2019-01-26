@@ -1,6 +1,6 @@
-﻿using System.Runtime.Remoting.Messaging;
-using System.Security.Policy;
-using InertiaMage.SpellEditor.Core;
+﻿using System;
+using IntertiaMage.Game.Core.Bad;
+
 #pragma warning disable 219
 
 namespace InertiaMage.SpellEditor.Presentation.Consol
@@ -9,30 +9,32 @@ namespace InertiaMage.SpellEditor.Presentation.Consol
     {
         public static void Main(string[] args)
         {
-            //Testing.ForeachTest();
-            LogicalOperationsTest.LogicalTest1();
-            ArrayTest.Test2dArray();
-            ArrayTest.JaggedArray();
+            var simulation = new CasterExample();
+            simulation.Run();
+            Console.ReadLine();
         }
-    }
 
-    internal static class SalaryCalculator
-    {
-        public static float CalculateAfterTaxes(float salary)
+        public class CasterExample
         {
-            const float tax1 = 0.85f;
-            const float tax2 = 0.99f;
-            const float bonus = 1.07f;
-            return salary * tax1 * tax2 * bonus;
+            public void Run()
+            {
+                var spell = new DamageSpell("Fireball", 10, 5)
+                {
+                    Description = "Big AOE"
+                };
+
+                var caster = new Caster("Deccer");
+                caster.Learn(spell);
+
+                var enemy1 = new Enemey1(10);
+
+                caster.Cast("Fireball", enemy1);
+                caster.Cast("Fireball", enemy1);
+            }
         }
 
-        private static void Step1()
-        {
-            throw new System.NotImplementedException();
-        }
+
     }
-
-
 }
 
 
